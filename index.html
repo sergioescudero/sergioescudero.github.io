@@ -10,10 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		
+		<link rel="stylesheet" href="addons/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<script src="addons/jquery/2.2.1/jquery-2.2.1.min.js"></script>
+		<script src="addons/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/mycss.css" />
+	
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -91,9 +97,13 @@
 					</header>
 
 					<!-- Lightbox Gallery  -->
-						<div class="container 75% gallery">
+						<div class="container 75%">
 							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/sergioescudero-the-innova-room-full.png" class="image fit from-left"><img src="images/thumbs/sergioescudero-the-innova-room.png" title="The Innova Room" alt="" /></a></div>
+								<div class="6u 12u(mobile)">
+									<a href="#" class="image fit from-left"  data-toggle="modal" data-target="#myModal">
+										<img src="images/thumbs/sergioescudero-the-innova-room.png" title="The Innova Room" alt="" />
+									</a>
+								</div>
 								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
@@ -106,7 +116,34 @@
 							</div>
 						</div>
 
+				
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				       <img src="images/fulls/sergioescudero-the-innova-room-full.png" alt="The InnovaRoom" class="img-rounded"/>
+					   <p class="portfolio">
+					   SEPTEMBER 2015 - present<BR/>
+					   Web Development - <span class="label label-info">css3</span>&nbsp;<span class="label label-info">wordpress</span>&nbsp;<span class="label label-info">php</span>&nbsp;<span class="label label-info">javascript</span> <a href="http://www.theinnovaroom.com" target="blank">
+						   <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>The Innova Room website</a><BR/> 
+					   I have built from the ground up and maintenance of a innovative website for The Innova Room which includes:<BR/>
+					   - Contribute to the overall design decisions and usability.<BR/>
+					   - Choose a theme that fit the needs of The Innova Room.<BR/>
+					   - Fully Responsive.<BR/>
+					   - Apply brand consistency throughout the website.<BR/>
+					   - Assure a fast load of the web site.<BR/>
+					   - Manage and enhance The Innova Room social networks presence.<BR/>
+					   - Personalization of CSS archives.<BR/>
+					   - Selection and implementation of the most adequate plugins for enhanced functionalities.<BR/>
+				   	 </p>
+				      </div>
+				
+				    </div>
+				  </div>
 				</div>
+				</div>
+				
 			</section>
 
 		<!-- Footer -->
@@ -136,6 +173,16 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			$('#modal').on('show', function () {
+
+			    $(this).find('.modal-body').css({width:'auto',
+			                               height:'auto', 
+			                              'max-height':'100%'});
+			});
+			
+			</script>
 
 	</body>
 </html>
