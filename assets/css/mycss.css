@@ -1,12 +1,30 @@
-p.portfolio {
+p.portfolioTitle {
     text-align: left;
 	font-size: 0.8em;
+	line-height: 1.4em
 }
 
-ul.portfolio{
+p.portfolioBody{
     text-align: left;
 	font-size: 0.8em;
+	line-height: 1.2em;
     margin:2em;
 }
 
-.modal-dialog{overflow:visible;min-height:100%!important;}
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+}
