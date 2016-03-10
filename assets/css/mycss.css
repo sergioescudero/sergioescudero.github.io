@@ -10,3 +10,8 @@ p.portfolioBody{
 	line-height: 1.2em;
     margin:2em;
 }
+
+.img-centered{
+	display: block;
+	margin: 0 auto;
+}
