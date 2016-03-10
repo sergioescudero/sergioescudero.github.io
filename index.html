@@ -14,9 +14,6 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		
 		<link rel="stylesheet" href="addons/bootstrap/3.3.6/css/bootstrap.min.css"/>
-		<script src="addons/jquery/2.2.1/jquery-2.2.1.min.js"></script>
-		<script src="addons/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/mycss.css" />
 	
@@ -108,10 +105,18 @@
 										<img src="images/thumbs/sergioescudero-the-innova-room.png" title="The Innova Room" alt="" />
 									</a>
 								</div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
+								<div class="6u 12u(mobile)">
+									<a href="#" class="image fit from-left"  data-toggle="modal" data-target="#transit">
+										<img src="images/thumbs/sergioescudero-the-innova-room.png" title="The Innova Room" alt="" />
+									</a>
+								</div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a></div>
+								<div class="6u 12u(mobile)">
+									<a href="#" class="image fit from-left"  data-toggle="modal" data-target="#masretina">
+										<img src="images/thumbs/sergioescudero-the-innova-room.png" title="The Innova Room" alt="" />
+									</a>
+								</div>
 								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
@@ -128,7 +133,7 @@
 				      <div class="modal-body">
 				         <img src="images/fulls/sergioescudero-the-innova-room-full.png" alt="The InnovaRoom" class="img-rounded img-responsive img-centered"/>
 					     <p class="portfolioTitle">
-					       <strong>September 2015 - present</strong><BR/>
+					       <strong>September 2015 - present. The Innova Room Web site.</strong><BR/>
 					       <strong>Web Development</strong> - <span class="label label-info">css3</span>&nbsp;<span class="label label-info">wordpress</span>&nbsp;<span class="label label-info">php</span>&nbsp;<span class="label label-info">javascript</span>
 				   		 </p>
 						 <p class="portfolioBody">
@@ -143,33 +148,34 @@
 					        - Selection and implementation of the most adequate plugins for enhanced functionalities.
 						 </p>
 				      </div>
-					  <div class="modal-footer">
-					         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					  </div>
 				    </div>
 				  </div>
 				</div>
 				
 				<!-- Modal Transit -->
-				<div class="modal fade" id="masRetina" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal fade" id="transit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog modal-lg modal-dialog ">
 				    <div class="modal-content">
 				      <div class="modal-body">
 				         <img src="images/fulls/sergioescudero-the-innova-room-full.png" alt="The InnovaRoom" class="img-rounded img-responsive img-centered"/>
-					     <p class="portfolioTitle">
-					       <strong>March 2015</strong><BR/>
-					       <strong>Java EE Development</strong> - <span class="label label-info">java ee</span>&nbsp;<span class="label label-info">wordpress</span>&nbsp;<span class="label label-info">php</span>&nbsp;<span class="label label-info">javascript</span>
-				   		 </p>
-						 <p class="portfolioBody">
-					        I have designed and built from the ground up a innovative website, <a href="http://www.theinnovaroom.com" target="blank">The Innova Room</a>, and I continue with the maintainance. The main duties includes:<BR/>
-					        - Contribute to the overall design decisions and usability.<BR/>
-					        - Choose a theme that fit the needs of The Innova Room.<BR/>
-					        - Fully Responsive.<BR/>
-					        - Apply brand consistency throughout the website.<BR/>
-					        - Assure a fast load of the web site.<BR/>
-					        - Manage and enhance The Innova Room social networks presence.<BR/>
-					        - Personalization of CSS archives.<BR/>
-					        - Selection and implementation of the most adequate plugins for enhanced functionalities.
+					     <p class="portfolioBody">
+					       <strong>March 2015. Transit</strong><BR/>
+					       <span class="label label-info">java ee</span>
+						   &nbsp;<span class="label label-info">activiti bpm</span>
+						   &nbsp;<span class="label label-info">spring framework</span>
+						   &nbsp;<span class="label label-info">spring security</span>
+						   &nbsp;<span class="label label-info">bootstrap</span>
+						   &nbsp;<span class="label label-info">jpa</span>
+						   &nbsp;<span class="label label-info">mysql</span>
+						   &nbsp;<span class="label label-info">atomikos</span>
+						   &nbsp;<span class="label label-info">chartjs</span>
+				   		 <br/><br/>
+					        I have developed a full business process management web tool, using Activiti as BPM.<BR/>
+							It includes:<BR/>
+							- Management of users, groups and rights.<BR/> 
+							- Design of business process using Activiti Modeler.<BR/>
+							- A simple process designer using tables.<BR/> 
+							- A control panel for know how the process are running and for discovering bottlenecks: time per task, number of instances per task, finished vs running,...<BR/>
 						 </p>
 				      </div>
 					  <div class="modal-footer">
@@ -179,6 +185,25 @@
 				  </div>
 				</div>
 				
+				<!-- Modal masretina -->
+				<!-- Modal -->
+				<div class="modal fade" id="masretina" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 				
 				
 				
@@ -206,7 +231,8 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="addons/jquery/2.2.1/jquery-2.2.1.min.js"></script>
+			<script src="addons/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -216,6 +242,15 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script>
+			/*
+			Due to how HTML5 defines its semantics, the autofocus HTML attribute has no effect in Bootstrap modals. 
+			To achieve the same effect, use some custom JavaScript:
+			*/
+			$('#myModal').on('shown.bs.modal', function () {
+			  $('#myInput').focus()
+			})
+			
+			
 			/**
 			 * Vertically center Bootstrap 3 modals so they aren't always stuck at the top
 			 */
